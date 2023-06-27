@@ -1,0 +1,117 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>MS Website - Portfolio</title>
+    <!-- Css -->
+    <link href='{% static "apps/assets/css/bootstrap.css" %}' rel="stylesheet">
+    <link href='{% static "apps/assets/css/lightbox.css" %}' rel="stylesheet" type="text/css" media="all"/>
+    <link href='{% static "apps/assets/css/style.css" %}' rel="stylesheet">
+</head>
+<body>
+<nav class="navbar navbar-default color-fill navbar-fixed-top">
+    <div class="col-md-12">
+        <div class="nav">
+            <button class="btn-nav">
+                <span class="icon-bar top"></span>
+                <span class="icon-bar middle"></span>
+                <span class="icon-bar bottom"></span>
+            </button>
+        </div>
+        <a class="navbar-brand" href='/'>
+            <h1 style="font-family: 'Metropolis Bold'">M S</h1>
+        </a>
+        <div class="nav-content hideNav hidden">
+            <ul class="nav-list vcenter">
+                <li class="nav-item"><a class="item-anchor" href="/">Home</a></li>
+                <li class="nav-item"><a class="item-anchor" href="/about/">About Me</a></li>
+                <li class="nav-item"><a class="item-anchor" href="/portfolio/">Portfolio</a></li>
+                <li class="nav-item"><a class="item-anchor" href="/contact/">Contact</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<section id="portfolio">
+    <div class="container">
+        <ul class="portfolio-sorting list-inline text-center">
+            <li><a href="#" data-group="all" class="active">All</a>
+            </li>
+            <li><a href="#" data-group="bot_tg">Telegram Bots</a>
+            </li>
+            <li><a href="#" data-group="chat">Chat</a>
+            </li>
+        </ul>
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="lightbox-grid square-thumbs" data-gallery-title="Gallery">
+                    <ul class="portfolio-items list-unstyled" id="grid">
+                        <li class="col-md-4 col-sm-12 col-xs-12 no-gutter" data-groups='["bot_tg"]'>
+                            <a href='{% static "/img/tg_bot.png" %}' data-lightbox="true">
+                                <div class="background-image-holder">
+                                    <img alt="portfolio" class="background-image" src='{% static "/img/tg_bot.png" %}'/>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="col-md-4 col-sm-12 col-xs-12 no-gutter" data-groups='["chat"]'>
+                            <a href='{% static "/img/Screenshot%20from%202023-06-26%2001-31-01.png" %}'
+                               data-lightbox="true">
+                                <div class="background-image-holder">
+                                    <img alt="portfolio" class="background-image"
+                                         src='{% static "/img/Screenshot%20from%202023-06-26%2001-31-01.png" %}'/>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="col-md-4 col-sm-12 col-xs-12 no-gutter" data-groups='["chat"]'>
+                            <a href='{% static "/img/Screenshot%20from%202023-06-26%2001-37-31.png" %}'
+                               data-lightbox="true">
+                                <div class="background-image-holder">
+                                    <img alt="portfolio" class="background-image"
+                                         src='{% static "/img/Screenshot%20from%202023-06-26%2001-37-31.png"  %}'/>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="col-md-4 col-sm-12 col-xs-12 no-gutter" data-groups='["bot_tg"]'>
+                            <a href='{% static "/img/tg_bot_1.png"  %}' data-lightbox="true">
+                                <div class="background-image-holder">
+                                    <img alt="portfolio" class="background-image" src='{% static "/img/tg_bot_1.png" %}'/>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="col-md-4 col-sm-12 col-xs-12 no-gutter" data-groups='["chat"]'>
+                            <a href='{% static "/img/Screenshot%20from%202023-06-26%2001-31-42.png"  %}'
+                               data-lightbox="true">
+                                <div class="background-image-holder">
+                                    <img alt="portfolio" class="background-image"
+                                         src='{% static "/img/Screenshot%20from%202023-06-26%2001-31-42.png" %}'/>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="col-md-4 col-sm-12 col-xs-12 no-gutter" data-groups='["chat"]'>
+                            <a href='{% static "/img/Screenshot%20from%202023-06-26%2001-31-20.png"  %}'
+                               data-lightbox="true">
+                                <div class="background-image-holder">
+                                    <img alt="portfolio" class="background-image"
+                                         src='{% static "/img/Screenshot%20from%202023-06-26%2001-31-20.png"  %}'/>
+                                </div>
+                            </a>
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<script src='{% static "/apps/assets/js/jquery.js" %}'></script>
+<script src='{% static "/apps/assets/js/bootstrap.min.js" %}'></script>
+<script src='{% static "/apps/assets/js/lightbox-plus-jquery.js" %}'></script>
+<script src='{% static "/apps/assets/js/jquery.shuffle.min.js" %}'></script>
+<script src='{% static "/apps/assets/js/modernizr.js" %}'></script>
+<script src='{% static "/apps/assets/js/script.js" %}'></script>
+</body>
+</html>

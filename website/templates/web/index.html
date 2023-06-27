@@ -1,0 +1,71 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>MS Website - Home</title>
+    <link href='{% static 'apps/assets/css/bootstrap.css' %}' rel="stylesheet">
+    <link href='{% static "apps/assets/css/style.css" %}' rel="stylesheet">
+</head>
+<body>
+<nav class="navbar navbar-default navbar-fixed-top">
+    <div class="col-md-12">
+        <div class="nav">
+            <button class="btn-nav">
+                <span class="icon-bar inverted top"></span>
+                <span class="icon-bar inverted middle"></span>
+                <span class="icon-bar inverted bottom"></span>
+            </button>
+        </div>
+        <a class="navbar-brand" href='/'>
+            <h1 style="font-family: 'Metropolis Bold'">M S</h1>
+        </a>
+        <div class="nav-content hideNav hidden">
+            <ul class="nav-list vcenter">
+                <li class="nav-item"><a class="item-anchor" href="/">Home</a></li>
+                <li class="nav-item"><a class="item-anchor" href="/about/">About Me</a></li>
+                <li class="nav-item"><a class="item-anchor" href="/portfolio/">Portfolio</a></li>
+                <li class="nav-item"><a class="item-anchor" href="/contact/">Contact</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<div class="span12">
+    <div class="col-md-6 no-gutter text-center fill">
+        <h2 class="vcenter">Simple is beautiful</h2>
+    </div>
+    <div class="col-md-6 no-gutter text-center">
+        <div id="header" data-speed="2" data-type="background">
+            <div id="headslide" class="carousel slide" data-ride="carousel">
+                <div class="carousel-inner" role="listbox">
+                    <div class="item active">
+                        <img src='{% static "img/parco-chan-Ztp54-7b5Qc-unsplash.jpg" %}' alt="Slide">
+                    </div>
+                    <div class="item">
+                        <img src='{% static "img/pexels-olga-lioncat-7244503.jpg" %}' alt="Slide">
+
+                    </div>
+                    <div class="item">
+                        <img src='{% static "img/parco-chan-BeNerxxCKLU-unsplash.jpg" %}' alt="Slide">
+                    </div>
+                    <div class="item">
+                        <img src='{% static "img/IMG_20230627_013533.jpg" %}' alt="Slide">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div style="clear:both;"></div>
+
+<script src='{% static "/apps/assets/js/menu-color.js" %}'></script>
+<script src='{% static "/apps/assets/js/jquery.js" %}'></script>
+<script src='{% static "/apps/assets/js/bootstrap.min.js" %}'></script>
+<script src='{% static "/apps/assets/js/modernizr.js" %}'></script>
+<script src='{% static "/apps/assets/js/script.js" %}'></script>
+</body>
+</html>
